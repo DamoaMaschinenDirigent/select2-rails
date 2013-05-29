@@ -2085,9 +2085,7 @@ the specific language governing permissions and limitations under the Apache Lic
             if (!equal(old, this.id(data))) { this.triggerChange({added:data,removed:oldData}); }
 
             else
-              // some validation frameworks ignore the change event and listen instead to keyup, click for selects
-              // so here we trigger the click event manually
-              this.opts.element.click();
+              this.clear()
         },
 
         // single
