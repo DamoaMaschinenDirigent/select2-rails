@@ -2085,7 +2085,7 @@ the specific language governing permissions and limitations under the Apache Lic
             if (!equal(old, this.id(data))) { this.triggerChange({added:data,removed:oldData}); }
 
             else
-              this.clear()
+              this.opts.element.blur();
         },
 
         // single
