@@ -2085,10 +2085,9 @@ the specific language governing permissions and limitations under the Apache Lic
             if (!equal(old, this.id(data))) { this.triggerChange({added:data,removed:oldData}); }
 
             else
-              // var data=this.selection.data("select2-data");
-              // this.opts.element.trigger({ type: "select2-removed", val: this.id(data), choice: data });
-              // this.triggerChange({removed:data});
-              this.opts.element.click();
+              // details = {}
+              // details = $.extend({},details,{type: 'change',val: this.val()})
+              this.opts.element.trigger('change')
         },
 
         // single
