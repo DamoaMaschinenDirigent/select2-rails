@@ -2083,11 +2083,7 @@ the specific language governing permissions and limitations under the Apache Lic
                 this.selection.focus();
 
             if (!equal(old, this.id(data))) { this.triggerChange({added:data,removed:oldData}); }
-
-            else
-              // details = {}
-              // details = $.extend({},details,{type: 'change',val: this.val()})
-              this.opts.element.trigger('change')
+            else { this.opts.element.trigger('change') }
         },
 
         // single
